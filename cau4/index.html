@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Circle.js"></script>
+</head>
+<body>
+<!--Hãy viết một chương trình để biểu diễn hình tròn, với mô tả của lớp hình tròn như sau:-->
+<!--Circle: Tên lớp-->
+<!-- -x: Toạ độ x-->
+<!-- -y: Toạ độ y-->
+<!-- -radius: bán kính-->
+<!-- -color: Màu sắc (sử dụng max hex)-->
+<!--+render(canvas): Hiển thị hình tròn trên một canvas-->
+<!--Hãy thực hiện các thao tác theo kịch bản sau:-->
+<!-- - Tạo một hình tròn có toạ độ 10, 10 và bán kính 100, màu #000000-->
+<!-- - Hiển thị hình tròn trên một canvas bằng cách sử dụng phương thức render-->
+<canvas id="myCanvas" width="400" height="400" style="border: 1px solid"></canvas>
+<script>
+    let canvas = document.getElementById('myCanvas');
+    let pen = canvas.getContext('2d');
+
+    let circle = new Circle(10, 10, 100, '#000000');
+    circle.render(canvas);
+</script>
+</body>
+</html>

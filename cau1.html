@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--Cho danh sách các điểm thi ở trong một mảng. Hãy viết hàm findMax() với đầu vào là một mảng điểm và đầu ra là điểm số cao nhất được tìm thấy trong danh sách đó.-->
+<script>
+    function findMax(arr) {
+        let max = [0];
+        for (let i = 0; i < max.length; i++) {
+            for (let num of arr) {
+                if (max < num) {
+                    max = num;
+                }
+            }
+            return max;
+        }
+    }
+
+    document.write(findMax([8, 9, 10, 7, 6]));
+</script>
+</body>
+</html>
